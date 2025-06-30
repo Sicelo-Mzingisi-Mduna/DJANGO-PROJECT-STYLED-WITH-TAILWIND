@@ -93,7 +93,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Tailwind output
+# Tailwind output - ignore build output only
 theme/static/css/dist/
 *.css.map
 
@@ -101,11 +101,14 @@ theme/static/css/dist/
 postcss.config.js
 source-map.js/
 
-# Optional: Ignore compiled CSS in static_src if generated
-theme/static_src/src/*.css
-theme/static_src/src/*.css.map
+# Allow source CSS files to be committed (do not ignore!)
+!theme/static_src/src/
+!theme/static_src/src/*.css
 
-# If you're building to a static dir for Django:
-crm/static/
+# Allow crm/static files (your custom static assets)
+!crm/static/
+!crm/static/**
+
+# Still ignore node_modules folders inside theme/static_src
+/crm/theme/static_src/node_modules/
 /crm/theme/static_src/node_modules/slash
-/crm/theme/static_src/node_modules
