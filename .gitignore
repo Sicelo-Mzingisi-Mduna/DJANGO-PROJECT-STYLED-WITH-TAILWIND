@@ -93,9 +93,12 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Tailwind output - ignore build output only
-theme/static/css/dist/
-*.css.map
+# Ignore only CSS maps in dist, not the actual CSS output
+theme/static/css/dist/*.css.map
+
+# Allow built CSS output to be committed
+!theme/static/css/dist/
+!theme/static/css/dist/styles.css
 
 # PostCSS or Tailwind build artifacts
 postcss.config.js
