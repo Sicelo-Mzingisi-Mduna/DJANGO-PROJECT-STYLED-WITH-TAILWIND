@@ -107,3 +107,5 @@ theme/static_src/src/*.css.map
 
 # If you're building to a static dir for Django:
 crm/static/
+/crm/theme/static_src/node_modules/slash
+/crm/theme/static_src/node_modules
