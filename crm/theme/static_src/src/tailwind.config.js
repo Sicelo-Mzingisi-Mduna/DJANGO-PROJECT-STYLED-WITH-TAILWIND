@@ -1,11 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    '../templates/**/*.html',   // your theme app templates
-    '../../templates/**/*.html', // project-level templates
-    '../../**/*.js',            // JS files across project
-    '../../**/*.py'             // Python files (optional, if you use Tailwind classes in strings)
+    '../templates/**/*.html',                // theme/templates
+    '../../templates/**/*.html',             // crm/templates
+    '../../webapp/templates/**/*.html',       // webapp templates
+    '../../**/*.js',                         // any JS files
+    '../../**/*.py'                         // Python files 
   ],
+  
   theme: {
     extend: {},
   },
